@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css?family=Comfortaa");
+@import url("https://fonts.googleapis.com/css?family=Pacifico");
+
+.boardContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  justify-items: stretch;
+  align-items: stretch;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Comfortaa, Helvetica;
+  font-size: 50px;
+}
+
+.boardContainer > div {
+  text-align: center;
+  line-height: 100px;
+  cursor: pointer;
+}
+
+.cell00,
+.cell01,
+.cell10,
+.cell11,
+.cell20,
+.cell21 {
+  border-right: 5px solid black;
+}
+
+.cell00,
+.cell01,
+.cell02,
+.cell10,
+.cell11,
+.cell12 {
+  border-bottom: 5px solid black;
+}
+
+.title,
+.winner {
+  font-family: Pacifico, Cursive;
+  font-size: 50px;
+  height: 150px;
+  line-height: 150px;
+  text-align: center;
+  cursor: default;
+}
+
+.playerContainer {
+  display: flex;
+  font-family: Pacifico, Cursive;
+  font-size: 50px;
+  height: 100px;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.playerX,
+.or,
+.playerO {
+  display: inline-flex;
+  width: 100px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.playerX,
+.playerO {
+  font-family: Comfortaa, Helvetica;
+  border-radius: 50%;
+  border: 2px solid black;
+  cursor: pointer;
+}
